@@ -68,14 +68,14 @@ export default async function Home({
           }
         />
         {state.page !== 1 ? (
-          <FrameButton>←</FrameButton>
+          <FrameButton onClick={dispatch}>←</FrameButton>
         ) : (
           <FrameButton action="link" target="https://framesjs.org/">
             Open docs
           </FrameButton>
         )}
         {state.page < 6 ? (
-          <FrameButton>→</FrameButton>
+          <FrameButton onClick={dispatch}>→</FrameButton>
         ) : (
           <FrameButton action="link" target="https://framesjs.org">
             Open frames.js
